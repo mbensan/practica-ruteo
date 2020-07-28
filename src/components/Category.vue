@@ -4,7 +4,7 @@
       <div class="col s12 m6">
         <div class="card teal darken-1">
           <div class="card-content white-text">
-            <span class="card-title">Restorants de {{$route.params.category.toUpperCase() }}</span>
+            <span class="card-title">Restorants de {{ nombre_categoria }}</span>
             <div class="collection">
               <a href="#!" class="collection-item">Niu Sushi</a>
               <a href="#!" class="collection-item active">Sushi Tosos</a>
@@ -24,6 +24,9 @@
 
 <script>
 export default {
-  name: 'Category'
+  name: 'Category',
+  props: {
+    nombre_categoria: String
+  }
 }
 </script>

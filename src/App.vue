@@ -5,7 +5,7 @@
         <a href="#" class="brand-logo">Restoranes</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><router-link to="/">Home</router-link></li>
-          <li><a href="badges.html">Components</a></li>
+          <li><router-link :to="{name: 'category', params: {category: 'Sushi'}}">Restoranes de Sushi</router-link></li>
           <li><a href="collapsible.html">JavaScript</a></li>
         </ul>
       </div>

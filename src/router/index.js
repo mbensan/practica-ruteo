@@ -25,6 +25,8 @@ export default new VueRouter({
     {
       path: '/:restoran',
       component: Restoran,
+      name: 'restoran',
+      props: true,
       children: [
         {
           path: '',
@@ -41,8 +43,10 @@ export default new VueRouter({
       ]
     },
     {
-      path: '/category/:category',
-      component: Category
+      path: '/category/:nombre_categoria',
+      component: Category,
+      name: 'category',  // le dimos un apodo a la ruta
+      props: true
     },
     {
       path: '*',
