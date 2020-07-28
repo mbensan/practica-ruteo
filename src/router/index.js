@@ -25,7 +25,7 @@ export default new VueRouter({
     {
       path: '/:restoran',
       component: Restoran,
-      name: 'restoran',
+      name: 'Restoran',
       props: true,
       children: [
         {
